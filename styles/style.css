@@ -1,4 +1,4 @@
-@import url(../node_modules/normalize.css);
+@import url(../node_modules/normalize.css/normalize.css);
 /*!
  * Bootstrap v5.0.0-beta3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -8378,20 +8378,36 @@ body, html {
   justify-content: center; }
   .company__content {
     backdrop-filter: blur(10px);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.15);
     height: 80vh;
     width: 80vw;
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    align-items: center;
+    justify-content: between; }
   .company__name {
     opacity: 1; }
   .company__type {
-    width: 50%;
+    width: 49%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    border-right: white solid 2px; }
+    flex-direction: column; }
+  .company__line_container {
+    width: 2%;
+    height: 80%;
+    display: flex;
+    justify-content: center; }
+  .company__line {
+    height: 100%;
+    width: 1px;
+    background-color: white;
+    opacity: 0.2; }
+  .company__img {
+    width: 20vw;
+    height: 30vh;
+    opacity: 0.6;
+    padding-bottom: 20px; }
 
 /*# sourceMappingURL=style.css.map */

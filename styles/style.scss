@@ -1,4 +1,4 @@
-@import "../node_modules/normalize.css";
+@import "../node_modules/normalize.css/normalize.css";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 body, html {
@@ -31,11 +31,13 @@ body, html {
 
       &__content {
         backdrop-filter: blur(10px);
-        background-color: rgba(0,0,0, 0.5);
+        background-color: rgba(0,0,0, 0.15);
         height: 80vh;
         width: 80vw;
         display: flex;
         flex-direction: row;
+        align-items: center;
+        justify-content: between;
       }
 
       &__name {
@@ -43,13 +45,33 @@ body, html {
       }
 
       &__type {
-          width: 50%;
+          width: 49%;
           height: 100%;
           display: flex;
           align-items: center;
           justify-content: center;
           flex-direction: column;
-          border-right: white solid 2px;
           
+      }
+
+      &__line_container {
+          width: 2%;
+          height: 80%;
+          display: flex;
+          justify-content: center;
+      }
+
+      &__line {
+          height: 100%;
+          width: 1px;
+          background-color: white;
+          opacity: 0.2;
+      }
+
+      &__img {
+          width: 20vw;
+          height: 30vh;
+          opacity: 0.6;
+          padding-bottom: 20px;
       }
   }
