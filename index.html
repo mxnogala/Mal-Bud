@@ -7,42 +7,189 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Zen+Dots&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@500&family=Xanh+Mono&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
+
+
     <div class="background">
         <div class="background__filter">
+            <nav class="nav">
+                <div class="container d-flex flex-row justify-content-between align-items-center">
+                    <img class="nav__brand d-flex" src="./assets/logo.svg" alt="logo">
+                    <div class="nav__collapse d-flex align-items-end">
+                        <a class="nav__link hover" href="#about-us">Firma budowlana</a>
+                        <a class="nav__link hover" href="#offer">Oferta</a>
+                        <a class="nav__link hover" href="#shop">Sklep</a>
+                        <a class="nav__link hover" href="#contact">Kontakt</a>
+                    </div>
+                </div>
+            </nav>
 
-            <div class="container-fluid">
-                <div class="company">
-                    <div class="company__content">
-                        <div class="company__type">
-                            <img src="./assets/build.jpg" class="company__img img-fluid" alt="">
-                            <h1 class="company__name display-5">
-                                MAL-BUD
-                            </h1>
-                            <h3 class="display-6 text-muted">
-                                Firma Budowlana Janusz Urban
-                            </h3>
-                        </div>
-                        <div class="company__line_container">
-                            <div class="company__line"></div>
-                        </div>
-                        <div class="company__type">
-                            <img src="./assets/wallpapers.jpg" class="company__img img-fluid" alt="">
-                            <h1 class="company__name display-5">
-                                MAL-BUD Tapety, Rolety
-                            </h1>
-                            <h3 class="display-6 text-muted">
-                                Sklep z tapetami
-                            </h3>
-                        </div>
+
+            <div class="container-fluid company">
+                <div class="company__logo_container">
+                    <img class="company__logo" src="./assets/logo.svg" alt="">
+                </div>
+                <div class="company__content">
+                    <div class="company__type" id="building">
+                        <h3 class="company__name">
+                            Firma Budowlana Janusz Urban
+                        </h3>
+                        <img src="./assets/malbud_build.jpg" class="company__img img-fluid" alt="">
+                    </div>
+                    <div class="company__type" id="wallpapers">
+                        <h3 class="company__name">
+                            Sklep z tapetami
+                        </h3>
+                        <img src="./assets/shop_1.jpg" class="company__img img-fluid" alt="">
                     </div>
                 </div>
             </div>
 
+            <div class="container-fluid">
+                <section class="building darkBackground" id="about-us">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-8">
+                                <h1 class="sectionHeader">Mal-Bud Firma Budowlana</h1>
+                                <p class="text">Malbud Janusz Urban to firma budowlana, która przez ponad 20 lat
+                                    efektywnej oraz
+                                    solidnej działalności, zjednoczyła sobie rzesze zadowolonych klientów.</p>
+                                <p class="text"> Jesteśmy przedsiębiorstwem, które łączy wypracowane przez lata
+                                    sprawdzone metody
+                                    budowlane z innowacyjnymi osiągnięciami techniki. Priorytetem naszej działalności
+                                    jest precyzja, dokładność oraz profesjonalna, terminowa realizacja.</p>
+                            </div>
+                            <div class="col-4">
+                                <img src="./assets/build_hero.jpg" class="img-fluid gallery-image" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="offer" id="offer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-center">
+                                <h1 class="sectionHeader">Oferujemy</h1>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-12 d-flex justify-content-center">
+                                <ul class="offer__list">
+                                    <li class="offer__item">budowę nowych obiektów</li>
+                                    <li class="offer__item">kompleksowe usługi remontowe</li>
+                                    <li class="offer__item">modernizację budynków</li>
+                                    <li class="offer__item">wykańczanie wnętrz</li>
+                                    <li class="offer__item">generalne wykonawstwo robót inwestycyjnych</li>
+                                    <li class="offer__item">ocieplanie elewacji</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="./assets/r1.jpg" class="img-fluid offer__img gallery-image" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img src="./assets/r-2.jpg" class="img-fluid offer__img gallery-image" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img src="./assets/r-3.jpg" class="img-fluid offer__img gallery-image" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="shop darkBackground" id="shop">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h1 class="sectionHeader">Sklep Tapety, Rolety</h1>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+                                        voluptatem, animi doloribus quod iusto sint maxime optio voluptas, explicabo
+                                        nobis quae consequuntur nulla alias officiis veritatis minus aperiam repudiandae
+                                        minima.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="./assets/shop_1.jpg" alt="" class="img-fluid gallery-image">
+                                </div>
+                                <div class="col-4">
+                                    <img src="./assets/shop5.jpg" alt="" class="img-fluid gallery-image">
+                                </div>
+                                <div class="col-4">
+                                    <img src="./assets/shop3.jpg" alt="" class="img-fluid gallery-image">
+                                </div>
+                                <div class="col-4">
+                                    <img src="./assets/shop4.jpg" alt="" class="img-fluid gallery-image">
+                                </div>
+                                <div class="col-4">
+                                    <img src="./assets/shop6.jpg" alt="" class="img-fluid gallery-image">
+                                </div>
+                                <div class="col-4">
+                                    <img src="./assets/shop2.jpg" alt="" class="img-fluid gallery-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="contact" id="contact">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <h1 class="sectionHeader">Kontakt</h1>
+                                <p class="text">ul. Generała Sikorskiego 18</p>
+                                <p class="text">63-500 Ostrzeszów</p>
+                                <p class="text">605 784 465</p>
+                                <p class="text">605 784 467</p>
+                                <p class="text">NIP: 6221366518</p>
+                                <p class="text">Regon: 250632976</p>
+                            </div>
+                            <div class="col-6">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d406.7985447167123!2d17.931880144655718!3d51.42458653985758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471aa43fb568c755%3A0xe2b6b50672656a36!2sGenera%C5%82a%20W%C5%82adys%C5%82awa%20Sikorskiego%2018%2C%2063-500%20Ostrzesz%C3%B3w!5e0!3m2!1spl!2spl!4v1620394823196!5m2!1spl!2spl"
+                                    width="600" height="350" style="border:0; opacity: 0.8;" allowfullscreen=""
+                                    loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <footer>
+                    <div class="container footer">
+                        <div class="row">
+                            <div class="col-4">
+                                <img src="./assets/logo.svg" alt="" class="img-fluid">
+                            </div>
+                            <div class="col-7">
+                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
         </div>
     </div>
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
+    <script src="./scripts/navbar.js"></script>
 </body>
 
 </html>

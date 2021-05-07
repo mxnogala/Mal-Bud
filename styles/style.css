@@ -5,6 +5,8 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url(../node_modules/bootstrap-icons/font/bootstrap-icons.css);
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@500&family=Raleway&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -8353,61 +8355,131 @@ textarea.form-control-lg {
 
   .d-print-none {
     display: none !important; } }
+.company {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden; }
+  .company__logo_container {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .company__logo {
+    height: 100px; }
+  .company__content {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row; }
+  .company__name {
+    opacity: 1;
+    font-size: 1.8rem;
+    padding-bottom: 30px; }
+  .company__type {
+    width: 50%;
+    transition: transform .5s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .company__type:hover {
+      transform: scale(1.1); }
+  .company__img {
+    width: 60%;
+    height: 250px;
+    object-fit: cover;
+    -webkit-box-shadow: 28px 28px 0px -9px #ABABAB;
+    box-shadow: -28px 28px 0px -9px #ABABAB;
+    -webkit-filter: grayscale(50%);
+    filter: grayscale(50%); }
+
+.nav {
+  background-color: #6f6f6f;
+  opacity: 0;
+  height: 90px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  transition: opacity linear .3s; }
+  .nav__brand {
+    height: 60px;
+    opacity: 0.6;
+    padding-bottom: 8px; }
+  .nav__link {
+    text-decoration: none;
+    color: #F7F7F7;
+    font-size: 1.2rem;
+    margin-right: 40px; }
+    .nav__link:hover {
+      color: #A5AEB8; }
+
+.hover {
+  position: relative;
+  transition: 0.3s;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding: 5px; }
+  .hover:before {
+    content: '';
+    border-bottom: 3px solid #A5AEB8;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    margin: 0 auto;
+    transition: 0.3s; }
+  .hover:hover:before {
+    width: 100%;
+    padding: 0; }
+  .hover:active {
+    background-color: #ABABAB;
+    padding: 5px;
+    transition: none; }
+
 body, html {
-  height: 300vh;
+  font-size: 1.1rem;
   box-sizing: border-box;
-  color: white; }
+  color: #555555;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500; }
 
 .background {
-  background-image: url("../assets/bg1.jpg");
-  height: 100%;
+  background-image: url("../assets/w-2.jpg");
+  background-color: #EBEBEB;
+  min-height: 100vh;
   width: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
   .background__filter {
-    background-color: rgba(0, 0, 0, 0.4);
-    height: inherit; }
+    background-color: rgba(235, 235, 235, 0.8);
+    min-height: inherit; }
 
-.company {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  .company__content {
-    backdrop-filter: blur(10px);
-    background-color: rgba(0, 0, 0, 0.15);
-    height: 80vh;
-    width: 80vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: between; }
-  .company__name {
-    opacity: 1; }
-  .company__type {
-    width: 49%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column; }
-  .company__line_container {
-    width: 2%;
-    height: 80%;
-    display: flex;
-    justify-content: center; }
-  .company__line {
-    height: 100%;
-    width: 1px;
-    background-color: white;
-    opacity: 0.2; }
-  .company__img {
-    width: 20vw;
-    height: 30vh;
-    opacity: 0.6;
-    padding-bottom: 20px; }
+.sectionHeader {
+  font-family: 'Arima Madurai', cursive; }
+
+.text {
+  color: #2f2f2f; }
+
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+  padding: 0; }
+
+.gallery-image {
+  padding: 20px;
+  filter: grayscale(50%); }
+
+section {
+  padding: 40px 0; }
+
+footer {
+  background-color: #555555; }
+
+.darkBackground {
+  background-color: #D1D1D1; }
 
 /*# sourceMappingURL=style.css.map */
