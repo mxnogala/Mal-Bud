@@ -1,74 +1,98 @@
 @import "../node_modules/normalize.css/normalize.css";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
-@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@500&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&family=Raleway:wght@500&display=swap');
 @import "./variables";
+@import "./general";
+@import "./footer";
 @import "./animations";
 @import "./company";
 @import "./navbar";
 @import "./gallery";
+@import "./load";
+@import "./shop";
+@import "./contact";
 
 
-
-body, html {
-    font-size: 1.1rem;
-    box-sizing: border-box;
-    color: $dark;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
+@include media-breakpoint-down(md) {
+  .mobileHide {
+    display:none;
   }
-  
-  .background {
-    background-image: url("../assets/w-2.jpg");
-    background-color: $basic;
-    min-height: 100vh;
-    width: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 
-    &__filter {
-        background-color: rgba(235,235,235, 0.8);
-        min-height: inherit;
+  .footer__content-border {
+    border:none;
+  }
+}
+@include media-breakpoint-up(lg){
+  .desktopHide {
+    display:none;
+  }
+}
+
+@include media-breakpoint-down(md)
+{
+    .company {
+        height: 90vh;
+        min-height: 650px;
+        &__content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__logo_container {
+            height: 15vh;
+            min-height: 120px;
+            
+        }
+
+        &__type {
+            height: 50%;
+            width: 100%;
+            padding: 10px 0;
+            position: relative;
+        }
+
+        &__name {
+            font-size: 1.3rem;
+            padding-bottom: 15px;
+            position: absolute;
+            top: 50%;
+            z-index: 2;
+            font-family: 'Arima Madurai', cursive;
+            color: black;
+            padding: 0;
+            
+        }
+
+        &__img {
+            height: 100%;
+            width: 100%;
+            box-shadow: none;
+            opacity: 0.6;
+        }
     }
-  }
+}
 
+@include media-breakpoint-down(lg) {
+  .nav__collapse.hide, .nav__collapse.hide a {
+    display:none;
+  }
   
-.sectionHeader {
-  font-family: 'Arima Madurai', cursive;
 }
-
-.text {
-  color: $darkest;
-}
-
-.container-fluid {
-  padding:0;
-}
-
-.gallery-image {
-  padding: 20px;
-  filter: grayscale(50%);
-  overflow: hidden;
-  transition: all .3s ease-in-out;
-  cursor: pointer;
-
-  &:hover {
-    filter: grayscale(0%);
-    transform: scale(1.05);
+@include media-breakpoint-up(lg) {
+  .nav__collapse.hide, .nav__collapse.hide a {
+    display:block;
   }
+  
 }
 
-section {
-  padding: 40px 0;
-}
 
-footer {
-  background-color: $dark;
-}
 
-.darkBackground {
-  background-color: $mediumLight;
-}
+
+
+
+
+
+
 

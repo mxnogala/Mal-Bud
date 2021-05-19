@@ -1,4 +1,5 @@
 @import url(../node_modules/normalize.css/normalize.css);
+@import url(../node_modules/bootstrap-icons/font/bootstrap-icons.css);
 /*!
  * Bootstrap v5.0.0-beta3 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -6,7 +7,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @import url(../node_modules/bootstrap-icons/font/bootstrap-icons.css);
-@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@500&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700&family=Raleway:wght@500&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -8355,205 +8356,67 @@ textarea.form-control-lg {
 
   .d-print-none {
     display: none !important; } }
-@keyframes unfoldIn {
-  0% {
-    transform: scaleY(0.005) scaleX(0); }
-  50% {
-    transform: scaleY(0.005) scaleX(1); }
-  100% {
-    transform: scaleY(1) scaleX(1); } }
-@keyframes unfoldOut {
-  0% {
-    transform: scaleY(1) scaleX(1); }
-  50% {
-    transform: scaleY(0.005) scaleX(1); }
-  100% {
-    transform: scaleY(0.005) scaleX(0); } }
-@keyframes zoomIn {
-  0% {
-    transform: scale(0); }
-  100% {
-    transform: scale(1); } }
-@keyframes zoomOut {
-  0% {
-    transform: scale(1); }
-  100% {
-    transform: scale(0); } }
-@keyframes fadeIn {
-  0% {
-    background: rgba(0, 0, 0, 0); }
-  100% {
-    background: rgba(0, 0, 0, 0.7); } }
-@keyframes fadeOut {
-  0% {
-    background: rgba(0, 0, 0, 0.7); }
-  100% {
-    background: rgba(0, 0, 0, 0); } }
-@keyframes scaleUp {
-  0% {
-    transform: scale(0.8) translateY(1000px);
-    opacity: 0; }
-  100% {
-    transform: scale(1) translateY(0px);
-    opacity: 1; } }
-@keyframes scaleDown {
-  0% {
-    transform: scale(1) translateY(0px);
-    opacity: 1; }
-  100% {
-    transform: scale(0.8) translateY(1000px);
-    opacity: 0; } }
-@keyframes scaleBack {
-  0% {
-    transform: scale(1); }
-  100% {
-    transform: scale(0.85); } }
-@keyframes scaleForward {
-  0% {
-    transform: scale(0.85); }
-  100% {
-    transform: scale(1); } }
-@keyframes quickScaleDown {
-  0% {
-    transform: scale(1); }
-  99.9% {
-    transform: scale(1); }
-  100% {
-    transform: scale(0); } }
-@keyframes slideUpLarge {
-  0% {
-    transform: translateY(0%); }
-  100% {
-    transform: translateY(-100%); } }
-@keyframes slideDownLarge {
-  0% {
-    transform: translateY(-100%); }
-  100% {
-    transform: translateY(0%); } }
-@keyframes moveUp {
-  0% {
-    transform: translateY(150px); }
-  100% {
-    transform: translateY(0); } }
-@keyframes moveDown {
-  0% {
-    transform: translateY(0px); }
-  100% {
-    transform: translateY(150px); } }
-@keyframes blowUpContent {
-  0% {
-    transform: scale(1);
-    opacity: 1; }
-  99.9% {
-    transform: scale(2);
-    opacity: 0; }
-  100% {
-    transform: scale(0); } }
-@keyframes blowUpContentTwo {
-  0% {
-    transform: scale(2);
-    opacity: 0; }
-  100% {
-    transform: scale(1);
-    opacity: 1; } }
-@keyframes blowUpModal {
-  0% {
-    transform: scale(0); }
-  100% {
-    transform: scale(1); } }
-@keyframes blowUpModalTwo {
-  0% {
-    transform: scale(1);
-    opacity: 1; }
-  100% {
-    transform: scale(0);
-    opacity: 0; } }
-@keyframes roadRunnerIn {
-  0% {
-    transform: translateX(-1500px) skewX(30deg) scaleX(1.3); }
-  70% {
-    transform: translateX(30px) skewX(0deg) scaleX(0.9); }
-  100% {
-    transform: translateX(0px) skewX(0deg) scaleX(1); } }
-@keyframes roadRunnerOut {
-  0% {
-    transform: translateX(0px) skewX(0deg) scaleX(1); }
-  30% {
-    transform: translateX(-30px) skewX(-5deg) scaleX(0.9); }
-  100% {
-    transform: translateX(1500px) skewX(30deg) scaleX(1.3); } }
-@keyframes sketchIn {
-  0% {
-    stroke-dashoffset: 778; }
-  100% {
-    stroke-dashoffset: 0; } }
-@keyframes sketchOut {
-  0% {
-    stroke-dashoffset: 0; }
-  100% {
-    stroke-dashoffset: 778; } }
-@keyframes modalFadeIn {
-  0% {
-    background-color: transparent; }
-  100% {
-    background-color: white; } }
-@keyframes modalFadeOut {
-  0% {
-    background-color: white; }
-  100% {
-    background-color: transparent; } }
-@keyframes modalContentFadeIn {
-  0% {
-    opacity: 0;
-    top: -20px; }
-  100% {
-    opacity: 1;
-    top: 0; } }
-@keyframes modalContentFadeOut {
-  0% {
-    opacity: 1;
-    top: 0px; }
-  100% {
-    opacity: 0;
-    top: -20px; } }
-@keyframes bondJamesBond {
-  0% {
-    transform: translateX(1000px); }
-  80% {
-    transform: translateX(0px);
-    border-radius: 75px;
-    height: 75px;
-    width: 75px; }
-  90% {
-    border-radius: 3px;
-    height: 182px;
-    width: 247px; }
-  100% {
-    border-radius: 3px;
-    height: 162px;
-    width: 227px; } }
-@keyframes killShot {
-  0% {
-    transform: translateY(0) rotate(0deg);
-    opacity: 1; }
-  100% {
-    transform: translateY(300px) rotate(45deg);
-    opacity: 0; } }
-@keyframes fadeToRed {
-  0% {
-    background-color: rgba(0, 0, 0, 0.6); }
-  100% {
-    background-color: rgba(255, 0, 0, 0.8); } }
-@keyframes slowFade {
-  0% {
-    opacity: 1; }
-  99.9% {
-    opacity: 0;
-    transform: scale(1); }
-  100% {
-    transform: scale(0); } }
+body, html {
+  font-size: 1.1rem;
+  box-sizing: border-box;
+  color: #555555;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500; }
+
+section {
+  padding: 60px 0;
+  overflow: hidden; }
+
+.background {
+  background-image: url("../assets/w-2.jpg");
+  background-color: #EBEBEB;
+  min-height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .background__filter {
+    background-color: rgba(235, 235, 235, 0.8);
+    min-height: inherit; }
+
+.sectionHeader {
+  font-family: 'Arima Madurai', cursive;
+  text-align: center; }
+  .sectionHeader-start {
+    text-align: start; }
+
+.text {
+  color: #2f2f2f;
+  text-align: center; }
+
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+  padding: 0; }
+
+.darkBackground {
+  background-color: #D1D1D1; }
+
+footer {
+  max-height: 100%;
+  background-color: #6f6f6f;
+  opacity: 0.98;
+  padding: 10px 0;
+  color: #D1D1D1; }
+
+.footer__header {
+  font-size: 1.8rem;
+  opacity: 0.7;
+  font-family: 'Arima Madurai', cursive;
+  padding: 15px 0; }
+.footer__content-border {
+  border-right: #ABABAB 1px solid; }
+.footer__highlighted {
+  font-weight: 500;
+  padding-right: 10px; }
+
 .company {
   height: 100vh;
+  min-height: 500px;
   width: 100%;
   overflow: hidden; }
   .company__logo_container {
@@ -8592,15 +8455,22 @@ textarea.form-control-lg {
     filter: grayscale(50%); }
 
 .nav {
+  max-width: 100vw;
   background-color: #6f6f6f;
   opacity: 0;
-  height: 90px;
+  max-height: 100%;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 3;
-  transition: opacity linear .3s; }
+  transition: all linear .3s;
+  padding: 10px 0; }
+  .nav__collapse {
+    position: relative;
+    bottom: 0;
+    max-height: 100%;
+    transition: all .5s; }
   .nav__brand {
     height: 60px;
     opacity: 0.6;
@@ -8612,6 +8482,11 @@ textarea.form-control-lg {
     margin-right: 40px; }
     .nav__link:hover {
       color: #A5AEB8; }
+  .nav__btn {
+    font-size: 2rem;
+    color: #F7F7F7;
+    background-color: transparent;
+    border: none; }
 
 .hover {
   position: relative;
@@ -8636,6 +8511,9 @@ textarea.form-control-lg {
     background-color: #ABABAB;
     padding: 5px;
     transition: none; }
+
+.nav__collapse.hide, .nav__collapse.hide a {
+  display: none; }
 
 .modal-active {
   overflow: hidden; }
@@ -8675,35 +8553,28 @@ textarea.form-control-lg {
       max-width: 90vw;
       max-height: 100vh;
       opacity: 0; }
+    #modal-container .modal__nav {
+      cursor: pointer;
+      color: white;
+      font-size: 60px; }
 
-body, html {
-  font-size: 1.1rem;
-  box-sizing: border-box;
-  color: #555555;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500; }
+#left {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%); }
 
-.background {
-  background-image: url("../assets/w-2.jpg");
-  background-color: #EBEBEB;
-  min-height: 100vh;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-  .background__filter {
-    background-color: rgba(235, 235, 235, 0.8);
-    min-height: inherit; }
+#right {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%); }
 
-.sectionHeader {
-  font-family: 'Arima Madurai', cursive; }
-
-.text {
-  color: #2f2f2f; }
-
-.container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
-  padding: 0; }
+#close {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 50px; }
 
 .gallery-image {
   padding: 20px;
@@ -8715,13 +8586,128 @@ body, html {
     filter: grayscale(0%);
     transform: scale(1.05); }
 
-section {
-  padding: 40px 0; }
+.carousel {
+  max-height: 100%; }
+  .carousel-img {
+    max-height: 90vh;
+    min-height: 400px;
+    object-fit: cover;
+    width: 100%; }
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 50px;
+    width: 50px;
+    background-color: rgba(0, 0, 0, 0.6); }
 
-footer {
-  background-color: #555555; }
+.load {
+  opacity: 0; }
 
-.darkBackground {
-  background-color: #D1D1D1; }
+@keyframes fromLeft {
+  from {
+    transform: translateX(-10%);
+    -webkit-transform: translateX(-10%); }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    -webkit-transform: translateX(0); } }
+@keyframes fromRight {
+  from {
+    opacity: 0;
+    transform: translateX(10%);
+    -webkit-transform: translateX(10%); }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    -webkit-transform: translateX(0); } }
+@keyframes fromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(10%);
+    -webkit-transform: translateY(10%); }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0); } }
+@keyframes fromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+    -webkit-transform: translateY(-10%); }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0); } }
+.shop__btn {
+  width: 100%;
+  transition: all .5s; }
+  .shop__btn:focus {
+    background-color: #555555;
+    color: #F7F7F7; }
+.shop-img {
+  height: 300px;
+  width: 90vw;
+  object-fit: cover; }
+
+.contact__section {
+  display: flex;
+  flex-direction: row;
+  justify-content: start; }
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center; }
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  align-self: center; }
+.contact__icon {
+  font-size: 50px;
+  opacity: 0.2;
+  padding-right: 20px; }
+
+@media (max-width: 767.98px) {
+  .mobileHide {
+    display: none; }
+
+  .footer__content-border {
+    border: none; } }
+@media (min-width: 992px) {
+  .desktopHide {
+    display: none; } }
+@media (max-width: 767.98px) {
+  .company {
+    height: 90vh;
+    min-height: 650px; }
+    .company__content {
+      display: flex;
+      flex-direction: column; }
+    .company__logo_container {
+      height: 15vh;
+      min-height: 120px; }
+    .company__type {
+      height: 50%;
+      width: 100%;
+      padding: 10px 0;
+      position: relative; }
+    .company__name {
+      font-size: 1.3rem;
+      padding-bottom: 15px;
+      position: absolute;
+      top: 50%;
+      z-index: 2;
+      font-family: 'Arima Madurai', cursive;
+      color: black;
+      padding: 0; }
+    .company__img {
+      height: 100%;
+      width: 100%;
+      box-shadow: none;
+      opacity: 0.6; } }
+@media (max-width: 991.98px) {
+  .nav__collapse.hide, .nav__collapse.hide a {
+    display: none; } }
+@media (min-width: 992px) {
+  .nav__collapse.hide, .nav__collapse.hide a {
+    display: block; } }
 
 /*# sourceMappingURL=style.css.map */

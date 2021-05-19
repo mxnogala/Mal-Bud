@@ -1,5 +1,6 @@
 .company {
     height: 100vh;
+    min-height: 500px;
     width: 100%;
     overflow: hidden;
     
@@ -25,6 +26,7 @@
         opacity: 1;
         font-size: 1.8rem;
         padding-bottom: 30px;
+        
     }
 
     &__type {
@@ -53,3 +55,4 @@
     }
 
 }
+

@@ -1,0 +1,16 @@
+.shop {
+    &__btn {
+        width: 100%;
+        transition: all .5s;
+        &:focus {
+          background-color: $dark;
+          color: $light;
+        }
+    }
+        &-img {
+            height: 300px;
+            width: 90vw;
+            object-fit: cover;
+          }
+}
+

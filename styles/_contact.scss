@@ -1,0 +1,28 @@
+.contact {
+    &__section {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+      }
+
+      &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self:center;
+      }
+
+      &__info {
+        display: flex;
+        flex-direction: column;
+        align-self:center;
+      }
+
+      &__icon {
+        font-size: 50px;
+        opacity: 0.2;
+        padding-right: 20px;
+      }
+
+
+}
